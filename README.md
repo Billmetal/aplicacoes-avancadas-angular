@@ -1,4 +1,9 @@
-# MYTESTAPP
+# Projeto referente ao módulo Aplicações avançadas com Angular do curso de Angular 8 da Digital Innovation One
+
+## Inicialmente o projeto esta com bugs de layout e routes , mas deixado assim propositalmente para treinamento de
+## correção de bugs e aperfeiçoamento , confirmando assim o entendimento do que foi passado no curso.
+
+# Aplicações avançadas com Angular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.12.
 

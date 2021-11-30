@@ -1,0 +1,39 @@
+<div>Test 1</div>
+
+<ng-template #template>
+    <div>Test 2</div>
+</ng-template>
+
+<ng-container #container></ng-container>
+
+ <!-- <ng-template [domIf]="flag"> -->
+    <div *domIf="flag">Test NgIf</div>
+<!-- </ng-template> -->
+
+<button (click)="onClick()">Click</button>
+
+<button (click)="onClickFlag()">Flag</button>
+
+<hr>
+
+<!-- <dom-child [info]="templateb" [list]="list"></dom-child>
+
+<ng-template let-item let-function="func" #templateb>
+    <div (click)="function(item)">{{ item }}</div>
+</ng-template> -->
+
+<!-- <div *ngFor="let item of list">{{ item }}</div> -->
+<!-- <ng-template ngFor [ngForOf]="list" let-item let-index="index">
+    <div>{{ item }}</div>
+</ng-template>  -->
+
+<div *domFor="let item from list; let index = index">{{ item }} {{ index }}</div>
+
+<hr>
+
+<div [domSwitch]="value">
+    <div *domSwitchCase="'A'">AAA</div>
+    <div *domSwitchCase="'B'">BBB</div>
+</div>
+
+<button (click)="toggle()">Toggle</button>
